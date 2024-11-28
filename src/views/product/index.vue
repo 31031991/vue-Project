@@ -9,7 +9,10 @@
 
 
 export default {
-name: "index"
+name: "index",
+  mounted() {
+    $(document).trigger('change')
+  }
 
 }
 </script>

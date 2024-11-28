@@ -38,10 +38,8 @@
                 </form>
               </div>
               <ul class="page-dropdown-menu">
-                <li class="dropdown-list">
-                  <router-link to="/"> <span>Home</span> </router-link></li>
-                <li class="dropdown-list">
-                  <router-link to="/products"> <span>Продукти</span> </router-link></li>
+                <li class="dropdown-list"><router-link to="/"> <span>Home</span> </router-link></li>
+                <li class="dropdown-list"><router-link to="/products"> <span>Продукти</span> </router-link></li>
               </ul>
             </div>
           </div>
@@ -80,10 +78,8 @@
                     <div class=" d-flex align-items-center justify-content-between ">
                       <nav>
                         <ul
-
                             class="page-dropdown-menu d-flex align-items-center justify-content-center">
-                          <li class="dropdown-list">
-                            <router-link to="/"> <span>Home</span> </router-link>
+                          <li class="dropdown-list"><router-link to="/"> <span>Home</span> </router-link>
                           <router-link to="/products"> <span>Продукти</span> </router-link>
                           </li>
                         </ul>
@@ -330,7 +326,10 @@
 
 
 export default {
-  name:'App'
+  name:'App',
+  mounted() {
+    $(document).trigger('change')
+  }
 
 }
 
