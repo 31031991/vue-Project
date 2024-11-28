@@ -7,15 +7,16 @@ const router = createRouter({
 
     {
       path: '/',
-      name: 'some',
-      component: () => import('../views/Some.vue'),
+      name: 'main',
+      component: () => import('../views/main/index.vue')
     },
+
     {
-      path: '/else',
-      name: 'else',
-      component: () => import('../views/Else.vue'),
+      path: '/products',
+      name: 'products',
+      component: () => import('../views/product/index.vue')
     },
-  ],
+  ]
 })
 
 export default router
